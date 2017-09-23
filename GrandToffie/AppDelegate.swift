@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  GrandToffie
-//
-//  Created by developer on 9/16/17.
-//  Copyright © 2017 developer. All rights reserved.
-//
 
 import UIKit
 
