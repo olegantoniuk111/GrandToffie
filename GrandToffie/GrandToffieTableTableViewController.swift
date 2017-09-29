@@ -10,9 +10,11 @@ import UIKit
 
 class GrandToffieTableViewController: UITableViewController, UITextInputTraits {
   
-  
-    @IBAction func button(_ sender: UIButton) {
-        displaySlivkiAlert()
+    @IBAction func calcMilkySplash(_ milkySplashSender: UIButton) {
+        displayAlertControllerForProductionQuantityInput(milkySplashSender)
+    }
+    @IBAction func calcSlivki(_ slivkiLenivkiSender: UIButton) {
+        displayAlertControllerForProductionQuantityInput(slivkiLenivkiSender)
     }
     @IBOutlet weak var producePlanLabel: UILabel!
     @IBOutlet weak var kgOnPortionLabel: UILabel!
@@ -35,29 +37,59 @@ class GrandToffieTableViewController: UITableViewController, UITextInputTraits {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let num = Int(self.producePlanLabel.text!){
+            
             if segue.identifier == "slivkiLenivkiSegue"{
-                let slivkiController = segue.destination as!
-                SlivkiLenivkiViewController
+               if let slivkiController = segue.destination as?
+                SlivkiLenivkiViewController{
                 slivkiController.slivki = SlivkiLenivki(plan: num)
                 slivkiController.kgOnPortion = self.kgOnPortionLabel.text
+                }
+            }else if segue.identifier == "milkySplashSegue"{
+                if let milkySplashController = segue.destination as? MilkySplashViewController{
+                    milkySplashController.milkySplash = MilkySplash(plan: num)
+                    milkySplashController.kgOnPortion = self.kgOnPortionLabel.text
+                }
             }
         }
     }
     
+    func displayWrongInputDataAlert(_ wrongInputSender: UIButton){
+        let alert = UIAlertController(title: "Only Decimal Number", message: "It must be only digit", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .default) { (action) in
+            self.displayAlertControllerForProductionQuantityInput(wrongInputSender)
+        }
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func performCATransaction(_ buttonTittle: String){
+        CATransaction.setCompletionBlock({
+            self.performSegue(withIdentifier: buttonTittle, sender: nil)
+        })
+        
+    }
     
     
-    func displaySlivkiAlert(){
-        let alert = UIAlertController(title: "Get Quantity For production", message: "Enter only digit", preferredStyle: .alert)
+    func displayAlertControllerForProductionQuantityInput(_ sender: UIButton){
+        let alert = UIAlertController(title: "Get Quantity For production", message: "Enter quantity for production", preferredStyle: .alert)
         let ok = UIAlertAction(title: "ok", style: .default, handler: {(_action: UIAlertAction) -> Void in
-            if let textField1: String = alert.textFields![0].text {
-                self.producePlanLabel.text = textField1
-                if let textField2: String = alert.textFields![1].text{
-                    self.kgOnPortionLabel.text = textField2
-                }
-                CATransaction.setCompletionBlock({
-                    self.performSegue(withIdentifier: "slivkiLenivkiSegue", sender: nil)
-                })
+            if let produceQuantity: Int = Int(alert.textFields![0].text!){
+                self.producePlanLabel.text = String(produceQuantity)
+                 }
+                else {self.displayWrongInputDataAlert(sender)}
+                if let textField2: Int = Int(alert.textFields![1].text!){
+                    self.kgOnPortionLabel.text = String(textField2)
+               }
+                else {self.displayWrongInputDataAlert(sender)}
+            
+            let buttonTittle: String = sender.currentTitle!
+            
+            switch buttonTittle {
+            case "calcSlivki": self.performCATransaction("slivkiLenivkiSegue")
+            case "calcMilkySplash" : self.performCATransaction("milkySplashSegue")
+            default : break
             }
+    
             })
         alert.addAction(ok)
         let cancel = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
@@ -75,11 +107,3 @@ class GrandToffieTableViewController: UITableViewController, UITextInputTraits {
         
     }
 }
-
-
-
-
-
-
-
-

@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8B5E50211F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E50201F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift */; };
-		8B5E50231F6DE87200CA1ECA /* MilkySplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E50221F6DE87200CA1ECA /* MilkySplashViewController.swift */; };
 		8B8543E71F6D4BFA00E0C817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8543E61F6D4BFA00E0C817 /* AppDelegate.swift */; };
 		8B8543EE1F6D4BFB00E0C817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8543ED1F6D4BFB00E0C817 /* Assets.xcassets */; };
 		8B8543F11F6D4BFB00E0C817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8543EF1F6D4BFB00E0C817 /* LaunchScreen.storyboard */; };
@@ -16,6 +15,8 @@
 		8B8544071F6D4BFB00E0C817 /* GrandToffieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8544061F6D4BFB00E0C817 /* GrandToffieUITests.swift */; };
 		8B8544151F6D4C0F00E0C817 /* SlivkiLenivki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8544141F6D4C0F00E0C817 /* SlivkiLenivki.swift */; };
 		8B8544191F6D522100E0C817 /* SlivkiLenivkiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8544181F6D522100E0C817 /* SlivkiLenivkiViewController.swift */; };
+		8BBC02921F79A06F0007B92C /* MilkySplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC02911F79A06F0007B92C /* MilkySplashViewController.swift */; };
+		8BBC02941F79C6880007B92C /* MilkySplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC02931F79C6880007B92C /* MilkySplash.swift */; };
 		8BF0A6231F725CDF00E3AB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF0A6221F725CDF00E3AB94 /* Main.storyboard */; };
 		8BF9A3051F711D1E000ECB26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8543E61F6D4BFA00E0C817 /* AppDelegate.swift */; };
 		8BF9A3061F711D1F000ECB26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8543E61F6D4BFA00E0C817 /* AppDelegate.swift */; };
@@ -40,20 +41,21 @@
 
 /* Begin PBXFileReference section */
 		8B5E50201F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrandToffieTableTableViewController.swift; sourceTree = "<group>"; };
-		8B5E50221F6DE87200CA1ECA /* MilkySplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilkySplashViewController.swift; sourceTree = "<group>"; };
-		8B8543E31F6D4BFA00E0C817 /* GrandToffie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandToffie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8543E61F6D4BFA00E0C817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8543ED1F6D4BFB00E0C817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B8543F01F6D4BFB00E0C817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8543F21F6D4BFB00E0C817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B8543F71F6D4BFB00E0C817 /* GrandToffieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandToffieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8543FB1F6D4BFB00E0C817 /* GrandToffieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandToffieTests.swift; sourceTree = "<group>"; };
 		8B8543FD1F6D4BFB00E0C817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B8544021F6D4BFB00E0C817 /* GrandToffieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandToffieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8544061F6D4BFB00E0C817 /* GrandToffieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandToffieUITests.swift; sourceTree = "<group>"; };
 		8B8544081F6D4BFB00E0C817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B8544141F6D4C0F00E0C817 /* SlivkiLenivki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlivkiLenivki.swift; sourceTree = "<group>"; };
 		8B8544181F6D522100E0C817 /* SlivkiLenivkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlivkiLenivkiViewController.swift; sourceTree = "<group>"; };
+		8BB771061F7B3D76005DDFBA /* GrandToffie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandToffie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB771071F7B3D76005DDFBA /* GrandToffieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandToffieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB771081F7B3D76005DDFBA /* GrandToffieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrandToffieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBC02911F79A06F0007B92C /* MilkySplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkySplashViewController.swift; sourceTree = "<group>"; };
+		8BBC02931F79C6880007B92C /* MilkySplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkySplash.swift; sourceTree = "<group>"; };
 		8BF0A6221F725CDF00E3AB94 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,18 +90,10 @@
 				8B8543E51F6D4BFA00E0C817 /* GrandToffie */,
 				8B8543FA1F6D4BFB00E0C817 /* GrandToffieTests */,
 				8B8544051F6D4BFB00E0C817 /* GrandToffieUITests */,
-				8B8543E41F6D4BFA00E0C817 /* Products */,
+				8BB771061F7B3D76005DDFBA /* GrandToffie.app */,
+				8BB771071F7B3D76005DDFBA /* GrandToffieTests.xctest */,
+				8BB771081F7B3D76005DDFBA /* GrandToffieUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		8B8543E41F6D4BFA00E0C817 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B8543E31F6D4BFA00E0C817 /* GrandToffie.app */,
-				8B8543F71F6D4BFB00E0C817 /* GrandToffieTests.xctest */,
-				8B8544021F6D4BFB00E0C817 /* GrandToffieUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		8B8543E51F6D4BFA00E0C817 /* GrandToffie */ = {
@@ -109,7 +103,8 @@
 				8B5E50201F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift */,
 				8B8544141F6D4C0F00E0C817 /* SlivkiLenivki.swift */,
 				8B8544181F6D522100E0C817 /* SlivkiLenivkiViewController.swift */,
-				8B5E50221F6DE87200CA1ECA /* MilkySplashViewController.swift */,
+				8BBC02931F79C6880007B92C /* MilkySplash.swift */,
+				8BBC02911F79A06F0007B92C /* MilkySplashViewController.swift */,
 				8BF0A6221F725CDF00E3AB94 /* Main.storyboard */,
 				8B8543ED1F6D4BFB00E0C817 /* Assets.xcassets */,
 				8B8543EF1F6D4BFB00E0C817 /* LaunchScreen.storyboard */,
@@ -153,7 +148,7 @@
 			);
 			name = GrandToffie;
 			productName = GrandToffie;
-			productReference = 8B8543E31F6D4BFA00E0C817 /* GrandToffie.app */;
+			productReference = 8BB771061F7B3D76005DDFBA /* GrandToffie.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8B8543F61F6D4BFB00E0C817 /* GrandToffieTests */ = {
@@ -171,7 +166,7 @@
 			);
 			name = GrandToffieTests;
 			productName = GrandToffieTests;
-			productReference = 8B8543F71F6D4BFB00E0C817 /* GrandToffieTests.xctest */;
+			productReference = 8BB771071F7B3D76005DDFBA /* GrandToffieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8B8544011F6D4BFB00E0C817 /* GrandToffieUITests */ = {
@@ -189,7 +184,7 @@
 			);
 			name = GrandToffieUITests;
 			productName = GrandToffieUITests;
-			productReference = 8B8544021F6D4BFB00E0C817 /* GrandToffieUITests.xctest */;
+			productReference = 8BB771081F7B3D76005DDFBA /* GrandToffieUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +199,6 @@
 				TargetAttributes = {
 					8B8543E21F6D4BFA00E0C817 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = JKBJZK7J8S;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
@@ -225,7 +219,7 @@
 				};
 			};
 			buildConfigurationList = 8B8543DE1F6D4BFA00E0C817 /* Build configuration list for PBXProject "GrandToffie" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,7 +227,7 @@
 				Base,
 			);
 			mainGroup = 8B8543DA1F6D4BFA00E0C817;
-			productRefGroup = 8B8543E41F6D4BFA00E0C817 /* Products */;
+			productRefGroup = 8B8543DA1F6D4BFA00E0C817;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -280,7 +274,8 @@
 				8B8544151F6D4C0F00E0C817 /* SlivkiLenivki.swift in Sources */,
 				8B8544191F6D522100E0C817 /* SlivkiLenivkiViewController.swift in Sources */,
 				8B8543E71F6D4BFA00E0C817 /* AppDelegate.swift in Sources */,
-				8B5E50231F6DE87200CA1ECA /* MilkySplashViewController.swift in Sources */,
+				8BBC02921F79A06F0007B92C /* MilkySplashViewController.swift in Sources */,
+				8BBC02941F79C6880007B92C /* MilkySplash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,10 +435,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JKBJZK7J8S;
 				INFOPLIST_FILE = GrandToffie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vin.GrandToffie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -455,10 +451,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JKBJZK7J8S;
 				INFOPLIST_FILE = GrandToffie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vin.GrandToffie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -469,12 +466,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JKBJZK7J8S;
 				INFOPLIST_FILE = GrandToffieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vin.GrandToffieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrandToffie.app/GrandToffie";
 			};
@@ -485,12 +483,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = JKBJZK7J8S;
 				INFOPLIST_FILE = GrandToffieTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vin.GrandToffieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrandToffie.app/GrandToffie";
 			};
@@ -505,7 +504,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vin.GrandToffieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = GrandToffie;
 			};
@@ -520,7 +519,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vin.GrandToffieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = GrandToffie;
 			};

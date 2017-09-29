@@ -31,14 +31,11 @@ class SlivkiLenivkiViewController: UIViewController {
         super.viewDidLoad()
         name.text = slivki?.name
         plan.text = String(describing: slivki!.producePlan)
-        waste.text = String(describing: slivki!.allowedRecyclableWaste!)
+        waste.text = String(describing: slivki!.allowedRecyclableWaste)
         
     }
-   
-   
     @IBAction func calculate() {
-        print("hello")
-        print ("method started")
+    
         var mustMadeInKg : Double = 0
         var mustMadeInPortion : Double = 0
         if let boxes = Int(producedBoxes.text!){
@@ -52,29 +49,15 @@ class SlivkiLenivkiViewController: UIViewController {
         }
         must_made.text! = String(mustMadeInKg)
         must_made_portion!.text = String(mustMadeInPortion)
-        
 
     }
  
     
-    
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
