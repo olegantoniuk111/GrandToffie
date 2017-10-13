@@ -11,17 +11,20 @@ class SlivkiLenivki : NSObject{
     let recyclableWastePercent: Double = 0.027
     let producePlan : Int
     
-    let allowedRecyclableWaste : Double
+    let waste : Double
+    
+    let allWeight : Int
     
     
-    init(plan producePlan  : Int) {
-        self.producePlan = producePlan;
-        self.allowedRecyclableWaste = Double(producePlan) * recyclableWastePercent
+    init(plan planForProduction  : Int) {
+        self.producePlan = planForProduction;
+        self.waste = Double(planForProduction) * recyclableWastePercent
+        self.allWeight = producePlan + Int(waste)
     }
     
-    func calculateShiftData (producedPallets pallets: Int, producedBoxes boxes : Int, producedRecyclableWaste recyclableWaste : Int ) -> Double{
+    func calculateShiftData (producedPallets pallets: Int, producedBoxes boxes : Int, producedRecyclableWaste recyclableWaste : Int ) -> Int{
         let producedWeight = (pallets * 88 * 5) + recyclableWaste + (boxes * 5) + weightOnLine
-        let neededWeigt = Double(self.producePlan - producedWeight )
+        let neededWeigt = self.allWeight - producedWeight
         return neededWeigt
     }
     

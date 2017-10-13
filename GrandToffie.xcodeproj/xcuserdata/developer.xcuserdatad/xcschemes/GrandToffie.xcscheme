@@ -49,6 +49,16 @@
                ReferencedContainer = "container:GrandToffie.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8B1F80221F8569D200195BE2"
+               BuildableName = "SlivkiLenivkiTest.xctest"
+               BlueprintName = "SlivkiLenivkiTest"
+               ReferencedContainer = "container:GrandToffie.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

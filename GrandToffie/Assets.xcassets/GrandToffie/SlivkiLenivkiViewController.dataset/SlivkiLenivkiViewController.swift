@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlivkiLenivkiViewController: UIViewController, UITextFieldDelegate {
+class SlivkiLenivkiViewController: UIViewController {
    
     @IBOutlet weak var name: UILabel!
    
@@ -29,16 +29,10 @@ class SlivkiLenivkiViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.producedBoxes.delegate = self
-        self.producedPallets.delegate = self
-        self.producedWaste.delegate = self
         name.text = slivki?.name
         plan.text = String(describing: slivki!.producePlan)
-        waste.text = String(describing: slivki!.waste)
+        waste.text = String(describing: slivki!.allowedRecyclableWaste)
         
-    }
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
     }
     @IBAction func calculate() {
     
@@ -47,7 +41,7 @@ class SlivkiLenivkiViewController: UIViewController, UITextFieldDelegate {
         if let boxes = Int(producedBoxes.text!){
             if let pallets = Int(producedPallets.text!){
                 if let waste = Int(producedWaste.text!){
-                    mustMadeInKg =  Double((slivki?.calculateShiftData(producedPallets: pallets, producedBoxes: boxes, producedRecyclableWaste: waste))!)
+                    mustMadeInKg =  (slivki?.calculateShiftData(producedPallets: pallets, producedBoxes: boxes, producedRecyclableWaste: waste))!
                     mustMadeInPortion = Double(mustMadeInKg)/Double(kgOnPortion!)!
                     print (mustMadeInKg)
                 }
