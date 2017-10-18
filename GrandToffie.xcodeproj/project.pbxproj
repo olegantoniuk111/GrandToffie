@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B21457D1F8578370076CCEF /* SlivkiLenivkiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B21457C1F8578370076CCEF /* SlivkiLenivkiTest.swift */; };
 		8B5E50211F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5E50201F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift */; };
 		8B8543E71F6D4BFA00E0C817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8543E61F6D4BFA00E0C817 /* AppDelegate.swift */; };
 		8B8543EE1F6D4BFB00E0C817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B8543ED1F6D4BFB00E0C817 /* Assets.xcassets */; };
@@ -48,10 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B1F80311F856D8800195BE2 /* GrandToffieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GrandToffieTests.xctest; path = "/Users/developer/Documents/Roshen/GrandToffie/build/Debug-iphoneos/GrandToffieTests.xctest"; sourceTree = "<absolute>"; };
-		8B1F80321F856D8800195BE2 /* GrandToffieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GrandToffieUITests.xctest; path = "/Users/developer/Documents/Roshen/GrandToffie/build/Debug-iphoneos/GrandToffieUITests.xctest"; sourceTree = "<absolute>"; };
-		8B21457C1F8578370076CCEF /* SlivkiLenivkiTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlivkiLenivkiTest.swift; sourceTree = "<group>"; };
-		8B21457E1F884C3A0076CCEF /* SlivkiLenivkiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SlivkiLenivkiTest.xctest; path = "/Users/developer/Documents/Roshen/GrandToffie/build/Debug-iphoneos/SlivkiLenivkiTest.xctest"; sourceTree = "<absolute>"; };
 		8B5E50201F6DDF9300CA1ECA /* GrandToffieTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrandToffieTableTableViewController.swift; sourceTree = "<group>"; };
 		8B8543E61F6D4BFA00E0C817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B8543ED1F6D4BFB00E0C817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +59,9 @@
 		8B8544141F6D4C0F00E0C817 /* SlivkiLenivki.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlivkiLenivki.swift; sourceTree = "<group>"; };
 		8B8544181F6D522100E0C817 /* SlivkiLenivkiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlivkiLenivkiViewController.swift; sourceTree = "<group>"; };
 		8B8DAD9C1F8110EB00FA7833 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8BB681921F97C953009D59FF /* GrandToffieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GrandToffieTests.xctest; path = "/Users/developer/Documents/Roshen/GrandToffie/build/Debug-iphoneos/GrandToffieTests.xctest"; sourceTree = "<absolute>"; };
+		8BB681931F97C953009D59FF /* GrandToffieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GrandToffieUITests.xctest; path = "/Users/developer/Documents/Roshen/GrandToffie/build/Debug-iphoneos/GrandToffieUITests.xctest"; sourceTree = "<absolute>"; };
+		8BB681941F97C953009D59FF /* SlivkiLenivkiTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SlivkiLenivkiTest.xctest; path = "/Users/developer/Documents/Roshen/GrandToffie/build/Debug-iphoneos/SlivkiLenivkiTest.xctest"; sourceTree = "<absolute>"; };
 		8BB771061F7B3D76005DDFBA /* GrandToffie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandToffie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBC02911F79A06F0007B92C /* MilkySplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkySplashViewController.swift; sourceTree = "<group>"; };
 		8BBC02931F79C6880007B92C /* MilkySplash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkySplash.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		8B8543DA1F6D4BFA00E0C817 = {
 			isa = PBXGroup;
 			children = (
-				8B21457C1F8578370076CCEF /* SlivkiLenivkiTest.swift */,
 				8B8543E51F6D4BFA00E0C817 /* GrandToffie */,
 				8B8543FA1F6D4BFB00E0C817 /* GrandToffieTests */,
 				8B8544051F6D4BFB00E0C817 /* GrandToffieUITests */,
@@ -165,7 +162,7 @@
 			);
 			name = SlivkiLenivkiTest;
 			productName = SlivkiLenivkiTest;
-			productReference = 8B21457E1F884C3A0076CCEF /* SlivkiLenivkiTest.xctest */;
+			productReference = 8BB681941F97C953009D59FF /* SlivkiLenivkiTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8B8543E21F6D4BFA00E0C817 /* GrandToffie */ = {
@@ -200,7 +197,7 @@
 			);
 			name = GrandToffieTests;
 			productName = GrandToffieTests;
-			productReference = 8B1F80311F856D8800195BE2 /* GrandToffieTests.xctest */;
+			productReference = 8BB681921F97C953009D59FF /* GrandToffieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8B8544011F6D4BFB00E0C817 /* GrandToffieUITests */ = {
@@ -218,7 +215,7 @@
 			);
 			name = GrandToffieUITests;
 			productName = GrandToffieUITests;
-			productReference = 8B1F80321F856D8800195BE2 /* GrandToffieUITests.xctest */;
+			productReference = 8BB681931F97C953009D59FF /* GrandToffieUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +336,6 @@
 			files = (
 				8BF9A3051F711D1E000ECB26 /* AppDelegate.swift in Sources */,
 				8B8543FC1F6D4BFB00E0C817 /* GrandToffieTests.swift in Sources */,
-				8B21457D1F8578370076CCEF /* SlivkiLenivkiTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
